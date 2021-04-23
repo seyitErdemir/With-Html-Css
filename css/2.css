@@ -1,0 +1,32 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #595999;
+    color: white;
+    font-size: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+#section {
+    width: 40%;
+    margin: 20px auto;
+    background: #252545;
+    padding: 3rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+}
+textarea{
+    resize:none;
+}

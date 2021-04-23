@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #eee;
+}
+
+
+header {
+    height: 100px;
+  padding: 2rem;
+}
+
+.logo {
+    width: 100%;   
+}
+
+header img {
+    width: 100%;
+}
+
+header #nav-bar {
+    left: 0px; 
+}
+header #nav-bar ul {
+    float: right;
+     border:1px solid black;
+}
+header #nav-bar ul li {
+    background-color: black;
+    border:1px solid white;
+    list-style: none;
+    margin-right: 3rem;
+    float: left;
+}
+header #nav-bar ul li a{
+  color: white;
+}
+header #nav-bar ul li a:hover{
+    color: black;
+    background-color: white;
+    border:1px solid black;
+}
+
+/* form balangıc*/
+.orta{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    padding: 2rem;
+}
+.form{
+    border: 1px solid;
+    border-radius: 100px;
+}
+
+#form {
+    text-align: center;
+}
+/* yazi balangıc*/
+.yazi{
+    
+    font-size: 15px;
+}
+.yazi a {
+    font-size: 50px;
+  color: #af0000;
+}
+/* kutu balangıc*/
+.kutular{
+    display: flex;
+    width: 80%;
+    border: 1px solid black;
+    margin: 2rem auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+
+}
+.kutu{
+    border:1px solid black;
+    margin:15px 0;
+    width: 30%;
+    background: white;
+    height: 350px;
+    border-radius: 40%;
+}
+.kutu main{
+margin-top: 1rem;
+}
+.kutu footer{
+    margin-top: 2rem;
+    }
+.kutu:hover{
+    border:1px solid white;
+    background: black;
+    color: white;
+}
+.btn{
+    border-radius: 40%;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+.btn:hover{
+    color: white;
+    background-color:black ;
+    border: 1px solid white;
+}
+#copy{
+    background-color: black;
+    color: white;
+}
+@media screen and (max-width:520px) {
+    .kutu{
+        width: 90%;
+        
+    }
+    header{
+        font-size: 10px;
+        height: 200px;
+       
+    }
+    header #nav-bar {
+        margin-top: 1rem;
+    }
+    .orta{
+        width:90%;
+        margin-top: 0px;
+       
+        
+    }
+    .kutu main{
+        margin-top: 1rem;
+        }
+        .kutu footer{
+            margin-top: 1rem;
+            }   
+}
+@media screen and (min-width:520px) and (max-width:990px) {
+
+
+    header #nav-bar ul {
+        margin:1rem 100px 1rem 0px ; 
+    } 
+       header #nav-bar {
+        text-align: center;
+    }
+    .orta{
+        margin-top: 120px;
+        width: 80%;
+    }
+    .kutu{
+        width: 45%;
+    }
+}

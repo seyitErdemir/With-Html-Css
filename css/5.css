@@ -1,0 +1,158 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+#nav-bar{
+    position: fixed;
+    right: 0px;
+}
+#nav-bar ul {
+    text-align: center;
+    background-color: #262629;
+}
+
+#nav-bar ul li{
+     background: #45567d;
+    display: inline-block;
+    padding: 1rem;
+    list-style-type:none;
+}
+#nav-bar ul li:hover{
+    background:#262629 ;
+
+}
+#nav-bar ul li a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+
+}
+
+.welcome {
+    height: 100vh;
+    width: 100%;
+    background: #393b3e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome h1 {
+    font-size: 50px;
+    margin-bottom: 1rem;
+}
+
+.welcome p {
+    color: white;
+    margin-top: -1rem;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+}
+
+#projects {
+    background: #45567d;
+    text-align: center;
+   
+}
+#projects  h1{
+    text-align: center;
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+    color: white;
+    font-size: 50px;
+}
+
+.alan {
+    width: 80%;
+    margin: 0px auto;
+   display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+#project-tile {
+        
+    width: 30%; 
+    height: 400px;
+    margin-top: 1rem;
+    margin-bottom:1rem;
+}
+
+#project-tile .resim {
+    height: 400;
+
+}
+
+#project-tile .resim img {
+    width: 100%;
+    height: 100%;
+
+}
+
+#project-tile footer  {
+    padding: 0.5rem;
+    background: black;
+    height: 50px;
+    text-align: center;
+}
+#project-tile footer a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.btn{
+    margin: 1rem auto;    
+    background: black;   
+}
+.btn a{
+    font-size: 30px;
+   color: white;
+    padding: 2rem;
+
+}
+#contact{
+    
+    height: 100vh;
+    width: 100%;
+    background: #393b3e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+   
+}
+#contact h1,p,ul,li{
+    padding: 0.5rem;
+    text-decoration: none;
+    list-style-type: none;
+}
+#contact ul li a i{
+    color: white;
+}
+
+@media screen and (max-width:500px){
+
+    #project-tile{
+        
+        width: 90%;
+
+        }
+}
+@media screen and (min-width:500px) and (max-width:1000px){
+    
+    #project-tile{
+        
+        width: 40%;
+
+        }
+}
+

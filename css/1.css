@@ -1,0 +1,63 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #eee;
+}
+
+#title {
+  text-align: center;
+  padding: 2rem;
+  font-size: 25px;
+}
+#title h1{
+    margin-bottom: 1rem;
+}
+#title p{
+    opacity: 0.6;
+}
+
+#img-div {
+  text-align: center;
+  width: 95%;
+  margin: 10px auto;
+  background: white;
+}
+#img-caption{
+   padding: 1rem;
+}
+#image{
+  width: 60%;
+}
+#triute-info {
+  padding: 2rem;
+  width: 40%;
+  margin: 10px auto;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#triute-info ul li{
+   margin-top: 1rem;
+
+}
+#footer {
+  text-align: center;
+  padding: 1rem;
+}
+@media screen and (max-width:520px) {
+    #title{
+        font-size:20px;
+    }
+    #triute-info{
+        width: 90%;
+    }
+    
+}
+@media screen and (min-width:520px) and (max-width:1050px) {
+    #triute-info{
+        width: 80%;
+    }
+}
