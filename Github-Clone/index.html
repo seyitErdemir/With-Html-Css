@@ -96,6 +96,7 @@
             color: white;
             border-bottom: 3px solid #f78166;
             opacity: 0.6;
+            margin-bottom: 7px;
         }
 
 
@@ -108,7 +109,7 @@
             color: #c9d1d9;
         }
 
-        .profile img {
+        .image {
             border-radius: 100%;
             margin-top: -40px;
             margin-left: 50px;
@@ -146,9 +147,105 @@
             color: #c9d1d9;
             text-decoration: none
         }
-        .social:hover span a{
+
+        .social:hover span a {
             color: #58a6ff;
             text-decoration: underline;
+        }
+
+
+        .baslik span {
+            color: #8b949e;
+        }
+
+        .baslik:hover {
+            color: #58a6ff;
+        }
+
+        .blok {
+            margin-bottom: 20px;
+        }
+
+        .repo {
+            border: 1px solid #30363d;
+            border-radius: 5px;
+            height: auto;
+            padding: 5px 10px;
+            font-size: 14px;
+
+        }
+
+        .repo span {
+            float: right;
+            font-size: 13px;
+            color: #8b949e;
+            border: 1px solid #30363d;
+            padding: 0px 5px;
+            border-radius: 16px;
+        }
+
+
+        .dil {
+            margin-top: 30px;
+            margin-bottom: 0;
+            font-size: 13px;
+            color: #8b949e;
+        }
+
+        .repo a {
+
+            color: #58a6ff;
+            text-decoration: none
+        }
+
+        .repo a:hover {
+            color: #58a6ff;
+            text-decoration: underline;
+        }
+
+        .repo strong:hover {
+            color: #58a6ff;
+        }
+
+        #boxs {
+            width: 50rem !important;
+            overflow-x: auto;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        .months,
+        .days {
+            font-size: 10px;
+            color: rgb(153, 153, 153);
+        }
+
+        .ps-1 {
+            padding-left: 0.25rem !important;
+        }
+
+        table {
+            width: 100%;
+            background-color: rgb(13, 17, 23);
+        }
+
+        tbody,
+        td,
+        tfoot,
+        th,
+        thead,
+        tr {
+            border-color: inherit;
+            border-style: solid;
+            border-width: 0;
+        }
+
+        td {
+            border: 4px solid rgb(13, 17, 23);
+            background-color: rgb(22, 27, 34);
+            width: 10px;
+            height: 15px;
+            border-radius: 2px;
         }
     </style>
 </head>
@@ -201,7 +298,7 @@
 
     <main>
         <div class="header alt_menu  "
-            style="margin-top:24px ; text-align:center; background-color:#0d1117; border-bottom:2px solid #161b22 ">
+            style="margin-top:24px ; text-align:center; background-color:#0d1117; border-bottom:1px solid #30363d ">
 
 
             <ul>
@@ -242,7 +339,7 @@
         <div class="container">
             <div class="row profile">
                 <div class="col-md-3  ">
-                    <img style="height:auto;" alt="" width="290" height="290"
+                    <img class="image" style="height:auto;" alt="" width="290" height="290"
                         class="avatar avatar-user width-full border color-bg-default  "
                         src="https://avatars.githubusercontent.com/u/72307285?v=4">
                     <div class=" row ms-5">
@@ -278,15 +375,23 @@
                                     <path fill-rule="evenodd"
                                         d="M11.536 3.464a5 5 0 010 7.072L8 14.07l-3.536-3.535a5 5 0 117.072-7.072v.001zm1.06 8.132a6.5 6.5 0 10-9.192 0l3.535 3.536a1.5 1.5 0 002.122 0l3.535-3.536zM8 9a2 2 0 100-4 2 2 0 000 4z">
                                     </path>
-                                </svg>  Konya/Merkez <br>
+                                </svg> Konya/Merkez <br>
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
                                     style="display: inline-block; vertical-align: text-bottom;">
                                     <path fill-rule="evenodd"
                                         d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
                                     </path>
-                                </svg><span><a href="#">  seyiterdemir.cf</a></span>
+                                </svg><span><a href="#"> seyiterdemir.cf</a></span>
                             </p>
                             <hr style="color:8b949e; font-size:10px;">
+                            <p>
+                            <h6>Organizations</h6><br>
+                            <a>
+                                <img style="border-radius: 6px;  margin-top:-35px"
+                                    src="https://avatars.githubusercontent.com/u/81539483?s=64&amp;v=4"
+                                    alt="@IEEEFiratComputerSociety" height="32" width="32" data-view-component="true">
+                            </a>
+                            </p>
 
 
 
@@ -295,7 +400,561 @@
                     </div>
 
                 </div>
-                <div class="col-md-9">asdasd</div>
+                <div class="col-md-9">
+                    <div class="row ms-5 mt-3">
+                        <div class="row ">
+                            <p> Popular repositories <span class="baslik"
+                                    style="float: right; font-size:14px; ">Customize your pins</span>
+                            </p>
+
+                        </div>
+                        <div class="row  justify-content-around  ">
+                            <div class="col-md-6  blok  ">
+                                <div class="repo">
+                                    <p><a href="">With-Php</a> <span>Public</span>
+                                    </p>
+
+                                    <p class="dil"> <svg style="color: #4F5D95;" width="24" height="24"
+                                            viewBox="0 0 16 16" fill="currentColor"
+                                            style="display: inline-block; vertical-align: text-bottom;">
+                                            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path>
+                                        </svg> PHP <strong style="margin-left: 20px;"><svg width="16" height="16"
+                                                viewBox="0 0 16 16" fill="currentColor"
+                                                style="display: inline-block; vertical-align: text-bottom;">
+                                                <path fill-rule="evenodd"
+                                                    d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z">
+                                                </path>
+                                            </svg> </strong> 9</p>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6  blok ">
+                                <div class="repo">
+                                    <p><a href="">With-Html-Css</a> <span>Public</span>
+                                    </p>
+
+                                    <p class="dil"> <svg style="color: #e34c26;" width="24" height="24"
+                                            viewBox="0 0 16 16" fill="currentColor"
+                                            style="display: inline-block; vertical-align: text-bottom;">
+                                            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path>
+                                        </svg> HTML <strong style="margin-left: 20px;"><svg width="16" height="16"
+                                                viewBox="0 0 16 16" fill="currentColor"
+                                                style="display: inline-block; vertical-align: text-bottom;">
+                                                <path fill-rule="evenodd"
+                                                    d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z">
+                                                </path>
+                                            </svg> </strong> 4</p>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6 blok ">
+                                <div class="repo">
+                                    <p><a href="">JavaCampHomeWork</a> <span>Public</span>
+                                    </p>
+
+                                    <p class="dil"> <svg style="color: #b07219;" width="24" height="24"
+                                            viewBox="0 0 16 16" fill="currentColor"
+                                            style="display: inline-block; vertical-align: text-bottom;">
+                                            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path>
+                                        </svg> JAVA <strong style="margin-left: 20px;"><svg width="16" height="16"
+                                                viewBox="0 0 16 16" fill="currentColor"
+                                                style="display: inline-block; vertical-align: text-bottom;">
+                                                <path fill-rule="evenodd"
+                                                    d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z">
+                                                </path>
+                                            </svg> </strong> 3</p>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6 blok ">
+                                <div class="repo">
+                                    <p><a href="">ecms</a> <span>Public</span>
+                                    </p>
+
+                                    <p class="dil"> <svg style="color: #e34c26;" width="24" height="24"
+                                            viewBox="0 0 16 16" fill="currentColor"
+                                            style="display: inline-block; vertical-align: text-bottom;">
+                                            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path>
+                                        </svg> HTML <strong style="margin-left: 20px;"><svg width="16" height="16"
+                                                viewBox="0 0 16 16" fill="currentColor"
+                                                style="display: inline-block; vertical-align: text-bottom;">
+                                                <path fill-rule="evenodd"
+                                                    d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z">
+                                                </path>
+                                            </svg> </strong> 3</p>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6 blok ">
+                                <div class="repo">
+                                    <p><a href="">With-Php</a> <span>Public</span>
+                                    </p>
+
+                                    <p class="dil"> <svg style="color: #4F5D95;" width="24" height="24"
+                                            viewBox="0 0 16 16" fill="currentColor"
+                                            style="display: inline-block; vertical-align: text-bottom;">
+                                            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path>
+                                        </svg> PHP <strong style="margin-left: 20px;"><svg width="16" height="16"
+                                                viewBox="0 0 16 16" fill="currentColor"
+                                                style="display: inline-block; vertical-align: text-bottom;">
+                                                <path fill-rule="evenodd"
+                                                    d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z">
+                                                </path>
+                                            </svg> </strong> 9</p>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6 blok ">
+                                <div class="repo">
+                                    <p><a href="">With-Php</a> <span>Public</span>
+                                    </p>
+
+                                    <p class="dil"> <svg style="color: #4F5D95;" width="24" height="24"
+                                            viewBox="0 0 16 16" fill="currentColor"
+                                            style="display: inline-block; vertical-align: text-bottom;">
+                                            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path>
+                                        </svg> PHP <strong style="margin-left: 20px;"><svg width="16" height="16"
+                                                viewBox="0 0 16 16" fill="currentColor"
+                                                style="display: inline-block; vertical-align: text-bottom;">
+                                                <path fill-rule="evenodd"
+                                                    d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z">
+                                                </path>
+                                            </svg> </strong> 9</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+                    <div class="row">
+                        <div class="boxs-container px-0 py-4">
+                            <div class="row">
+                                <div class="col-1 days d-flex align-items-end flex-column pt-1 pe-0">
+                                    <div class="mt-4 mb-3">Mon</div>
+                                    <div class="mb-3">Wed</div>
+                                    <div>Fri</div>
+                                </div>
+                                <div class="col-11">
+                                    <div class="months ps-1">
+                                        <span>Dec</span>
+                                        <span>Jan</span>
+                                        <span>Feb</span>
+                                        <span>Mar</span>
+                                        <span>Apr</span>
+                                        <span>May</span>
+                                        <span>Jun</span>
+                                        <span>Jul</span>
+                                        <span>Aug</span>
+                                        <span>Sep</span>
+                                        <span>Oct</span>
+                                        <span>Nov</span>
+                                    </div>
+                                    <div id="boxs">
+                                        <table>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(14, 68, 41);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(22, 27, 34);"></td>
+                                                <td style="background-color: rgb(14, 68, 41);"></td>
+                                                <td style="background-color: rgb(57, 211, 83);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(0, 109, 50);"></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(0, 109, 50);"></td>
+                                                <td style="background-color: rgb(14, 68, 41);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(14, 68, 41);"></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(57, 211, 83);"></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(57, 211, 83);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(38, 166, 65);"></td>
+                                                <td style="background-color: rgb(38, 166, 65);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(14, 68, 41);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(0, 109, 50);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(0, 109, 50);"></td>
+                                                <td style="background-color: rgb(0, 109, 50);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(22, 27, 34);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(14, 68, 41);"></td>
+                                                <td style="background-color: rgb(22, 27, 34);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(22, 27, 34);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(22, 27, 34);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(22, 27, 34);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(22, 27, 34);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(0, 109, 50);"></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(57, 211, 83);"></td>
+                                                <td style="background-color: rgb(57, 211, 83);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(22, 27, 34);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(0, 109, 50);"></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td style="background-color: rgb(14, 68, 41);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(14, 68, 41);"></td>
+                                                <td style="background-color: rgb(0, 109, 50);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(22, 27, 34);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(57, 211, 83);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(22, 27, 34);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(22, 27, 34);"></td>
+                                                <td style="background-color: rgb(0, 109, 50);"></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(14, 68, 41);"></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(14, 68, 41);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(0, 109, 50);"></td>
+                                                <td style="background-color: rgb(38, 166, 65);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(22, 27, 34);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(57, 211, 83);"></td>
+                                                <td style="background-color: rgb(14, 68, 41);"></td>
+                                                <td style="background-color: rgb(0, 109, 50);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(14, 68, 41);"></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="background-color: rgb(14, 68, 41);"></td>
+                                                <td style="background-color: rgb(0, 109, 50);"></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(0, 109, 50);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(57, 211, 83);"></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(22, 27, 34);"></td>
+                                                <td style="background-color: rgb(0, 109, 50);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(14, 68, 41);"></td>
+                                                <td style="background-color: rgb(0, 109, 50);"></td>
+                                                <td style="background-color: rgb(57, 211, 83);"></td>
+                                                <td style="background-color: rgb(14, 68, 41);"></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(14, 68, 41);"></td>
+                                                <td style="background-color: rgb(14, 68, 41);"></td>
+                                                <td style="background-color: rgb(57, 211, 83);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(0, 109, 50);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(14, 68, 41);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(38, 166, 65);"></td>
+                                                <td style="background-color: rgb(14, 68, 41);"></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(22, 27, 34);"></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(38, 166, 65);"></td>
+                                                <td style="background-color: rgb(38, 166, 65);"></td>
+                                                <td style="background-color: rgb(14, 68, 41);"></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(0, 109, 50);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(0, 109, 50);"></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(0, 109, 50);"></td>
+                                                <td style="background-color: rgb(0, 109, 50);"></td>
+                                                <td style="background-color: rgb(38, 166, 65);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(0, 109, 50);"></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(38, 166, 65);"></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(0, 109, 50);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(14, 68, 41);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(38, 166, 65);"></td>
+                                                <td style="background-color: rgb(57, 211, 83);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(14, 68, 41);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(0, 109, 50);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(57, 211, 83);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(22, 27, 34);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(22, 27, 34);"></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(57, 211, 83);"></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(14, 68, 41);"></td>
+                                                <td style="background-color: rgb(38, 166, 65);"></td>
+                                                <td style="background-color: rgb(0, 109, 50);"></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(0, 109, 50);"></td>
+                                                <td style="background-color: rgb(22, 27, 34);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(0, 109, 50);"></td>
+                                                <td style="background-color: rgb(0, 109, 50);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(38, 166, 65);"></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(0, 109, 50);"></td>
+                                                <td style="background-color: rgb(38, 166, 65);"></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(0, 109, 50);"></td>
+                                                <td style="background-color: rgb(38, 166, 65);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(22, 27, 34);"></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(22, 27, 34);"></td>
+                                                <td style="background-color: rgb(22, 27, 34);"></td>
+                                                <td style="background-color: rgb(38, 166, 65);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(57, 211, 83);"></td>
+                                                <td style="background-color: rgb(57, 211, 83);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(0, 109, 50);"></td>
+                                                <td style="background-color: rgb(57, 211, 83);"></td>
+                                                <td style="background-color: rgb(22, 27, 34);"></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(0, 109, 50);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(38, 166, 65);"></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td style="background-color: rgb(14, 68, 41);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(38, 166, 65);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(0, 109, 50);"></td>
+                                                <td style="background-color: rgb(0, 109, 50);"></td>
+                                                <td style="background-color: rgb(14, 68, 41);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(14, 68, 41);"></td>
+                                                <td style="background-color: rgb(0, 109, 50);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(57, 211, 83);"></td>
+                                                <td style="background-color: rgb(57, 211, 83);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(0, 109, 50);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(22, 27, 34);"></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(57, 211, 83);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(0, 109, 50);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(22, 27, 34);"></td>
+                                                <td style="background-color: rgb(57, 211, 83);"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="background-color: rgb(0, 109, 50);"></td>
+                                                <td style="background-color: rgb(38, 166, 65);"></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="footer-box col-11 d-flex space-between mt-2 ms-5">
+                                    <span>Learn how we count contributions</span>
+                                    <span class="ms-auto p-0 pe-5">Less <span class="ms-1" id="box"><span><span
+                                                    class="five-boxs"
+                                                    style="color: transparent; background-color: rgb(22, 27, 34);">z</span><span
+                                                    class="five-boxs"
+                                                    style="color: transparent; background-color: rgb(14, 68, 41);">z</span><span
+                                                    class="five-boxs"
+                                                    style="color: transparent; background-color: rgb(0, 109, 50);">z</span><span
+                                                    class="five-boxs"
+                                                    style="color: transparent; background-color: rgb(38, 166, 65);">z</span><span
+                                                    class="five-boxs"
+                                                    style="color: transparent; background-color: rgb(57, 211, 83);">z</span></span></span>
+                                        More</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
