@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Taviraj&display=swap');
+body {
+  font-family: 'Taviraj', serif;
+}
+
+.border-dashed {
+  border: 2px dashed black;
+}
+
+.register {
+  padding: 10px;
+  box-shadow: 5px 10px;
+  background: white;
+}
