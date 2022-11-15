@@ -9,7 +9,7 @@
   </head>
   <body>
     <ul class="menu">
-      <div class="toggle" ><ion-icon name="add-outline"></ion-icon></div>
+      <div class="toggle"><ion-icon name="add-outline"></ion-icon></div>
       <li style="--i: 0; --clr: #ff2972">
         <a href=""><ion-icon name="home-outline"></ion-icon></a>
       </li>
@@ -38,6 +38,7 @@
     </ul>
     <footer>
       <a
+        target="_blank"
         href="https://www.youtube.com/watch?v=koTXGYLkPBo&ab_channel=OnlineTutorials"
         >Kaynak</a
       >
@@ -52,13 +53,12 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
     <script>
-        let toggle = document.querySelector('.toggle')
-        let menu = document.querySelector('.menu')
+      let toggle = document.querySelector(".toggle");
+      let menu = document.querySelector(".menu");
 
-        toggle.onclick = function(){ 
-            menu.classList.toggle('active')
-        }
-
+      toggle.onclick = function () {
+        menu.classList.toggle("active");
+      };
     </script>
   </body>
 </html>
