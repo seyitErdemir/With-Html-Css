@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #070707;
+}
+
+.container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container i {
+  position: absolute;
+  inset: 0;
+  border: 1.5px solid #fff;
+  transition: 0.5s;
+}
+
+.container i:nth-child(1) {
+  animation: animate 5s linear infinite;
+}
+.container i:nth-child(2) {
+  animation: animate 7s linear infinite;
+}
+.container i:nth-child(3) {
+  animation: animate4 11s linear infinite;
+}
+
+.container:hover i {
+  border: 13px solid var(--clr);
+  filter: drop-shadow(0 0 20px var(--clr));
+  filter: blur(2px);
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate4 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.login {
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login h2 {
+  font-size: 2em;
+  color: #fff;
+}
+
+.login .inputBx {
+  position: relative;
+  width: 100%;
+}
+
+.login .inputBx input {
+  position: relative;
+  width: 100%;
+  padding: 12px 20px;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  font-size: 1.2em;
+  color: #fff;
+  box-shadow: none;
+  outline: none;
+}
+
+.login .inputBx input[type="submit"] {
+  width: 100%;
+  background: #0078ff;
+  background: linear-gradient(45deg, #0d10d8, #cb0fd1);
+  border: none;
+  cursor: pointer;
+}
+
+.login .inputBx input:placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.login .links {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.login .links a{
+  color: #fff;
+  text-decoration: none;
+}
+
+footer {
+  position: fixed;
+  bottom: 60px;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #999;
+}
