@@ -1,0 +1,151 @@
+<HTML>
+
+<head>
+    <title>Whatsapp Form Widget by www.idblanter.com</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif
+        }
+
+        .none {
+            display: none
+        }
+
+        /* Input Field CSS */
+        .datainput {
+            position: relative;
+            margin: 5px 0 20px
+        }
+ 
+
+        .whatsapp-form textarea {
+            min-height: 120px
+        }
+ 
+        .datainput textarea {
+            font-size: 15px;
+            padding: 15px 0;
+            display: block;
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #ddd
+        }
+ 
+        .datainput textarea:focus {
+            outline: none
+        }
+
+        .datainput label {
+            color: #999;
+            font-size: 14px;
+            font-weight: 400;
+            position: absolute;
+            pointer-events: none;
+            left: 0;
+            top: 18px;
+            transition: .2s ease all
+        }
+ 
+        .datainput textarea:focus~label,
+        .datainput textarea:valid~label {
+            top: -10px;
+            font-size: 14px;
+            color: #21a51f
+        }
+ 
+        .bar {
+            position: relative;
+            display: block;
+            width: 100%
+        }
+
+        .bar:before,
+        .bar:after {
+            content: '';
+            height: 2px;
+            width: 0;
+            bottom: 1px;
+            position: absolute;
+            background: #21a51f;
+            transition: .2s ease all
+        }
+
+        .bar:before {
+            left: 50%
+        }
+
+        .bar:after {
+            right: 50%
+        }
+ 
+        .datainput textarea:focus~.bar:before,
+        .datainput textarea:focus~.bar:after {
+            width: 50%
+        }
+ 
+
+        .greenx {
+            background: #4CAF50
+        }
+ 
+ 
+        .datainput textarea:focus~.highlight {
+            animation: inputHighlighter .3s ease
+        }
+ 
+        .datainput textarea:focus~label,
+        .datainput textarea:valid~label {
+            top: -10px;
+            font-size: 13px;
+            color: #21a51f
+        }
+
+        /* Default Whatsapp Form CSS by www.idblanter.com */
+        form.whatsapp-form {
+            box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+            border-radius: .5rem;
+            padding: 20px;
+            box-sizing: border-box;
+            color: #444;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .whatsapp-form a.send_form {
+            color: #fff;
+            background: #21a51f;
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px 25px;
+            border-radius: .3rem;
+            font-weight: 700;
+            letter-spacing: .5px;
+            font-size: 15px;
+        }
+  
+
+        .whatsapp-form {
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form class="whatsapp-form">
+      
+        <div class="datainput">
+            <textarea id='wa_textarea' placeholder='' maxlength='5000' row='1' required=""></textarea>
+            <span class="highlight"></span><span class="bar"></span>
+            <label>Description</label>
+        </div>
+        <a class="send_form" href="javascript:void" type="submit" title="Send to Whatsapp">Send to Whatsapp</a>
+        <div id="text-info"></div>
+    </form>
+ 
+</body>
+
+</HTML>

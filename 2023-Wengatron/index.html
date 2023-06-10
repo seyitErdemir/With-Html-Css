@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="textarea.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+        integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .bgs {
+            height: 500px;
+            border: 5px solid rgba(44, 166, 77, 0.5);
+            background: white;
+            opacity: 0.8;
+            border-radius: 100px 0 100px 0;
+            box-shadow: 10px 10px 30px rgba(44, 166, 77, 0.5);
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container d-block" style="z-index: 2;">
+            <div class="row " style="justify-content: center; ;">
+                <div class="col-5 bgs p-5 mx-4 d-block">
+                    <h2>Input</h2>
+                    <form class="whatsapp-form">
+
+                        <div class="datainput">
+                            <textarea id='wa_textarea' placeholder='' maxlength='5000' row='1' required=""></textarea>
+                            <span class="highlight"></span><span class="bar"></span>
+                            <label>Description</label>
+                        </div>
+                        <a class="send_form" href="javascript:void" type="submit" title="Send to Whatsapp">Send</a>
+                        <div id="text-info"></div>
+                    </form>
+                </div>
+                <div class="col-5 bgs p-5  mx-4 d-block">
+                    <h2>OutPut</h2>
+                    <form class="whatsapp-form">
+
+                        <div class="datainput">
+                            <textarea id='wa_textarea' placeholder='' readonly maxlength='5000' row='1'  required=""></textarea>
+                            <span class="highlight"></span><span class="bar"></span>
+                            <label>ChatGPT OutPut </label>
+                         </div> 
+
+                        <div class="datainput">
+                            <textarea id='wa_textarea' placeholder='' readonly maxlength='5000' row='1' required=""></textarea>
+                            <span class="highlight"></span><span class="bar"></span>
+                            <label>Model OutPut</label>
+                        </div>  
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <script>
+        let container = document.querySelector('.container');
+        for (let i = 0; i < 80; i++) {
+            let blocks = document.createElement('div');
+            blocks.classList.add('block');
+            container.appendChild(blocks);
+        }
+
+        function circle() {
+            let circleButton = document.querySelector('.circleButton');
+            container.classList.toggle('circle')
+        }
+
+        function generate() {
+            anime({
+                targets: '.block',
+                translateX: function () {
+                    return anime.random(-500, 500);
+                },
+                translateY: function () {
+                    return anime.random(-500, 500);
+                },
+                scale: function () {
+                    return anime.random(1, 5);
+                }
+
+            })
+        }
+
+        if (Math.floor(Math.random() * (100 - 10 + 1)) % 2 == 0) {
+            circle()
+            generate();
+
+        } else {
+            generate();
+        }
+
+
+    </script>
+
+</body>
+
+</html>
