@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <body>
+        <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+        <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+    </body>
+
+    <script>
+		window.onload = function () {
+
+			var chart = new CanvasJS.Chart("chartContainer", {
+				animationEnabled: true,
+				title: {
+					text: "JavaScript Pie-Chart"
+				},
+				data: [{
+					type: "pie",
+					startAngle: 240,
+					yValueFormatString: "##0.00\"%\"",
+					indexLabel: "{label} {y}",
+					dataPoints: [
+						{ y: 79.45, label: "Google" },
+						{ y: 7.31, label: "Bing" },
+						{ y: 7.06, label: "Baidu" },
+						{ y: 4.91, label: "Yahoo" },
+						{ y: 1.26, label: "Others" }
+					]
+				}]
+			});
+			chart.render();
+
+		}
+	</script>
+
+
+    <footer>
+        <a target="_blank" href="https://cdn.canvasjs.com/canvasjs.min.js"><span>Kaynak</span></a>
+    </footer>
+</body>
+
+</html>

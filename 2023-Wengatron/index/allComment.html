@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+
+    <title>deneme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+
+
+    <style type="text/css">
+        body {
+            background: #dcdcdc;
+        }
+
+        .total-like-user-main a {
+            display: inline-block;
+            margin: 0 -17px 0 0;
+        }
+
+        .total-like {
+            border: 1px solid;
+            border-radius: 50px;
+            display: inline-block;
+            font-weight: 500;
+            height: 34px;
+            line-height: 33px;
+            padding: 0 13px;
+            vertical-align: top;
+        }
+
+        .restaurant-detailed-ratings-and-reviews hr {
+            margin: 0 -24px;
+        }
+
+        .graph-star-rating-header .star-rating {
+            font-size: 17px;
+        }
+
+        .progress {
+            background: #f2f4f8 none repeat scroll 0 0;
+            border-radius: 0;
+            height: 30px;
+        }
+
+        .rating-list {
+            display: inline-flex;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        .rating-list-left {
+            height: 16px;
+            line-height: 29px;
+            width: 10%;
+        }
+
+        .rating-list-center {
+            width: 80%;
+        }
+
+        .rating-list-right {
+            line-height: 29px;
+            text-align: right;
+            width: 10%;
+        }
+
+        .restaurant-slider-pics {
+            bottom: 0;
+            font-size: 12px;
+            left: 0;
+            z-index: 999;
+            padding: 0 10px;
+        }
+
+        .restaurant-slider-view-all {
+            bottom: 15px;
+            right: 15px;
+            z-index: 999;
+        }
+
+        .offer-dedicated-nav .nav-link.active,
+        .offer-dedicated-nav .nav-link:hover,
+        .offer-dedicated-nav .nav-link:focus {
+            border-color: #3868fb;
+            color: #3868fb;
+        }
+
+        .offer-dedicated-nav .nav-link {
+            border-bottom: 2px solid #fff;
+            color: #000000;
+            padding: 16px 0;
+            font-weight: 600;
+        }
+
+        .offer-dedicated-nav .nav-item {
+            margin: 0 37px 0 0;
+        }
+
+        .restaurant-detailed-action-btn {
+            margin-top: 12px;
+        }
+
+        .restaurant-detailed-header-right .btn-success {
+            border-radius: 3px;
+            height: 45px;
+            margin: -18px 0 18px;
+            min-width: 130px;
+            padding: 7px;
+        }
+
+        .text-black {
+            color: #000000;
+        }
+
+        .icon-overlap {
+            bottom: -23px;
+            font-size: 74px;
+            opacity: 0.23;
+            position: absolute;
+            right: -32px;
+        }
+
+        .menu-list img {
+            width: 41px;
+            height: 41px;
+            object-fit: cover;
+        }
+
+        .restaurant-detailed-header-left img {
+            width: 88px;
+            height: 88px;
+            border-radius: 3px;
+            object-fit: cover;
+            box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+        }
+
+        .reviews-members .media .mr-3 {
+            width: 56px;
+            height: 56px;
+            object-fit: cover;
+        }
+
+        .rounded-pill {
+            border-radius: 50rem !important;
+        }
+
+        .total-like-user {
+            border: 2px solid #fff;
+            height: 34px;
+            box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+            width: 34px;
+        }
+
+        .total-like-user-main a {
+            display: inline-block;
+            margin: 0 -17px 0 0;
+        }
+
+        .total-like {
+            border: 1px solid;
+            border-radius: 50px;
+            display: inline-block;
+            font-weight: 500;
+            height: 34px;
+            line-height: 33px;
+            padding: 0 13px;
+            vertical-align: top;
+        }
+
+        .restaurant-detailed-ratings-and-reviews hr {
+            margin: 0 -24px;
+        }
+
+        .graph-star-rating-header .star-rating {
+            font-size: 17px;
+        }
+
+        .progress {
+            background: #f2f4f8 none repeat scroll 0 0;
+            border-radius: 0;
+            height: 30px;
+        }
+
+        .rating-list {
+            display: inline-flex;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        .rating-list-left {
+            height: 16px;
+            line-height: 29px;
+            width: 10%;
+        }
+
+        .rating-list-center {
+            width: 80%;
+        }
+
+        .rating-list-right {
+            line-height: 29px;
+            text-align: right;
+            width: 10%;
+        }
+
+        .restaurant-slider-pics {
+            bottom: 0;
+            font-size: 12px;
+            left: 0;
+            z-index: 999;
+            padding: 0 10px;
+        }
+
+        .restaurant-slider-view-all {
+            bottom: 15px;
+            right: 15px;
+            z-index: 999;
+        }
+
+        .progress {
+            background: #f2f4f8 none repeat scroll 0 0;
+            border-radius: 0;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <link rel="stylesheet" href="https://allyoucan.cloud/cdn/icofont/1.0.1/icofont.css"
+        integrity="sha384-jbCTJB16Q17718YM9U22iJkhuGbS0Gd2LjaWb4YJEZToOPmnKDjySVa323U+W7Fv" crossorigin="anonymous">
+    <div class="container">
+        <div class="col-md-12">
+            <div class="offer-dedicated-body-left">
+                <div class="tab-content" id="pills-tabContent">
+
+                    <div class="tab-pane fade active show mt-4" id="pills-reviews" role="tabpanel"
+                        aria-labelledby="pills-reviews-tab">
+                        <div id="ratings-and-reviews"
+                            class="bg-white rounded shadow-sm p-4 mb-4 clearfix restaurant-detailed-star-rating">
+
+                            <h5 class="mb-0 pt-1">Rate this Place
+                                <a class="btn btn-primary btn-sm  float-right" href="index.html">Test Sayfasına
+                                    Yönlen</a>
+                            </h5>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div id="ratings-and-reviews"
+                        class="bg-white rounded shadow-sm p-4 mb-4 clearfix restaurant-detailed-star-rating">
+                        <table id="example" class="display" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Position</th>
+                                    <th>Office</th>
+                                    <th>Age</th>
+                                    <th>Start date</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Tiger Nixon</td>
+                                    <td>System Architect</td>
+                                    <td>Edinburgh</td>
+                                    <td>61</td>
+                                    <td>2011-04-25</td>
+                                    <td><span class="badge badge-danger m-0">Canceled</span></td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>Donna Snider</td>
+                                    <td>Customer Support</td>
+                                    <td>New York</td>
+                                    <td>27</td>
+                                    <td>2011-01-25</td>
+                                    <td><span class="badge badge-info m-0">In Progress</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Donna Snider</td>
+                                    <td>Customer Support</td>
+                                    <td>New York</td>
+                                    <td>27</td>
+                                    <td>2011-01-25</td>
+                                    <td><span class="badge badge-warning m-0">Delayed</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Donna Snider</td>
+                                    <td>Customer Support</td>
+                                    <td>New York</td>
+                                    <td>27</td>
+                                    <td>2011-01-25</td>
+                                    <td><span class="badge badge-success m-0">Delivered</span></td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Position</th>
+                                    <th>Office</th>
+                                    <th>Age</th>
+                                    <th>Start date</th>
+                                    <th>Salary</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('#example').DataTable();
+        });
+    </script>
+</body>
+
+</html>
