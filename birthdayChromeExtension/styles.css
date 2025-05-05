@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  min-width: 450px;  /* Daha büyük minimum genişlik */
+  width: 450px;      /* Daha geniş bir popup */
+  height: 600px;     /* Daha yüksek bir popup */
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  overflow-y: auto;  /* İçerik uzunsa scroll görünecek */
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 10;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 12px;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  color: #7f8c8d;
+  transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+  color: #3498db;
+  border-bottom: 3px solid #3498db;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 15px;
+  color: #34495e;
+}
+
+input[type="text"],
+input[type="date"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-size: 15px;
+  transition: border 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.btn-save {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.btn-save:hover {
+  background-color: #2980b9;
+}
+
+.search-box {
+  margin-bottom: 18px;
+}
+
+#search-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+.birthday-card {
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  border-left: 4px solid #3498db;
+  position: relative;
+}
+
+.birthday-card h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+  color: #2c3e50;
+  padding-right: 20px; /* Silme butonu için yer açıyoruz */
+}
+
+.birthday-card p {
+  font-size: 14px;
+  color: #7f8c8d;
+  margin-bottom: 6px;
+}
+
+.upcoming {
+  border-left-color: #e74c3c;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #e74c3c;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.notification {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: #2ecc71;
+  color: white;
+  border-radius: 4px;
+  font-size: 14px;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.notification.error {
+  background-color: #e74c3c;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.no-birthdays {
+  text-align: center;
+  color: #7f8c8d;
+  padding: 20px 0;
+  font-style: italic;
+}
+
+/* Responsive adjustments */
+@media (max-width: 520px) {
+  body {
+    width: 100%;
+  }
+} 

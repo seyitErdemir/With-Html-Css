@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doğum Günü Hatırlatıcı</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Doğum Günü Hatırlatıcı</h1>
+    
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="add-form">Kişi Ekle</button>
+      <button class="tab-btn" data-tab="birthday-list">Doğum Günleri</button>
+    </div>
+    
+    <div class="tab-content active" id="add-form">
+      <form id="birthday-form">
+        <div class="form-group">
+          <label for="name">Ad:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="surname">Soyad:</label>
+          <input type="text" id="surname" name="surname" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="birthdate">Doğum Tarihi:</label>
+          <input type="date" id="birthdate" name="birthdate" required>
+        </div>
+        
+        <button type="submit" class="btn-save">Kaydet</button>
+      </form>
+    </div>
+    
+    <div class="tab-content" id="birthday-list">
+      <div class="search-box">
+        <input type="text" id="search-input" placeholder="Ara...">
+      </div>
+      <div id="birthdays-container">
+        <!-- Doğum günleri buraya JavaScript ile eklenecek -->
+      </div>
+    </div>
+
+    <div id="notification" class="notification hidden"></div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html> 
