@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Eğitim Rehberi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fitness Eğitim Rehberi</h1>
+        
+        <div class="body-map">
+            <img src="body-outline.svg" alt="Vücut Haritası" usemap="#bodyMap">
+            <map name="bodyMap">
+                <!-- Front View -->
+                <area shape="rect" coords="70,100,230,150" alt="Omuzlar" href="#" onclick="showExercises('shoulders')" title="Omuzlar">
+                <area shape="rect" coords="80,150,220,200" alt="Göğüs" href="#" onclick="showExercises('chest')" title="Göğüs">
+                <area shape="rect" coords="90,200,210,250" alt="Karın" href="#" onclick="showExercises('abs')" title="Karın">
+                <area shape="rect" coords="50,120,80,180" alt="Biceps" href="#" onclick="showExercises('biceps')" title="Biceps">
+                <area shape="rect" coords="220,120,250,180" alt="Biceps" href="#" onclick="showExercises('biceps')" title="Biceps">
+                <area shape="rect" coords="40,180,60,240" alt="Ön Kol" href="#" onclick="showExercises('forearms')" title="Ön Kol">
+                <area shape="rect" coords="240,180,260,240" alt="Ön Kol" href="#" onclick="showExercises('forearms')" title="Ön Kol">
+                <area shape="rect" coords="80,290,110,380" alt="Baldır" href="#" onclick="showExercises('thighs')" title="Baldır">
+                <area shape="rect" coords="190,290,220,380" alt="Baldır" href="#" onclick="showExercises('thighs')" title="Baldır">
+                <area shape="rect" coords="70,380,100,450" alt="Baldır" href="#" onclick="showExercises('calves')" title="Baldır">
+                <area shape="rect" coords="200,380,230,450" alt="Baldır" href="#" onclick="showExercises('calves')" title="Baldır">
+
+                <!-- Back View -->
+                <area shape="rect" coords="370,100,530,150" alt="Omuzlar" href="#" onclick="showExercises('shoulders')" title="Omuzlar">
+                <area shape="rect" coords="380,150,520,200" alt="Sırt" href="#" onclick="showExercises('back')" title="Sırt">
+                <area shape="rect" coords="390,200,510,250" alt="Alt Sırt" href="#" onclick="showExercises('lower-back')" title="Alt Sırt">
+                <area shape="rect" coords="350,120,380,180" alt="Triceps" href="#" onclick="showExercises('triceps')" title="Triceps">
+                <area shape="rect" coords="520,120,550,180" alt="Triceps" href="#" onclick="showExercises('triceps')" title="Triceps">
+                <area shape="rect" coords="340,180,360,240" alt="Ön Kol" href="#" onclick="showExercises('forearms')" title="Ön Kol">
+                <area shape="rect" coords="540,180,560,240" alt="Ön Kol" href="#" onclick="showExercises('forearms')" title="Ön Kol">
+                <area shape="rect" coords="380,290,410,380" alt="Hamstring" href="#" onclick="showExercises('hamstrings')" title="Hamstring">
+                <area shape="rect" coords="490,290,520,380" alt="Hamstring" href="#" onclick="showExercises('hamstrings')" title="Hamstring">
+                <area shape="rect" coords="370,380,400,450" alt="Baldır" href="#" onclick="showExercises('calves')" title="Baldır">
+                <area shape="rect" coords="500,380,530,450" alt="Baldır" href="#" onclick="showExercises('calves')" title="Baldır">
+            </map>
+            <div class="view-labels">
+                <span class="front-label">Ön Görünüm</span>
+                <span class="back-label">Arka Görünüm</span>
+            </div>
+        </div>
+
+        <div class="exercise-list">
+            <h2>Egzersizler</h2>
+            <div id="exerciseContainer">
+                <p>Lütfen vücut haritasından bir bölge seçin.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

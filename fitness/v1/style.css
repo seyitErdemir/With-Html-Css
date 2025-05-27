@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.body-map {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.body-map img {
+    max-width: 300px;
+    height: auto;
+    cursor: pointer;
+}
+
+.body-map area {
+    cursor: pointer;
+}
+
+.exercise-list {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.exercise-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.exercise-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.exercise-item h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.exercise-item p {
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .body-map img {
+        max-width: 250px;
+    }
+} 

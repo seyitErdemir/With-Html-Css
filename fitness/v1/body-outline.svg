@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="500" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg">
+    <!-- Head -->
+    <circle cx="150" cy="50" r="30" fill="#e0e0e0" stroke="#333" stroke-width="2"/>
+    
+    <!-- Neck -->
+    <rect x="140" y="80" width="20" height="20" fill="#e0e0e0" stroke="#333" stroke-width="2"/>
+    
+    <!-- Torso -->
+    <path d="M100,100 L200,100 L190,250 L110,250 Z" fill="#e0e0e0" stroke="#333" stroke-width="2"/>
+    
+    <!-- Shoulders -->
+    <path d="M100,100 L70,120 L80,140 L100,130 Z" fill="#e0e0e0" stroke="#333" stroke-width="2"/>
+    <path d="M200,100 L230,120 L220,140 L200,130 Z" fill="#e0e0e0" stroke="#333" stroke-width="2"/>
+    
+    <!-- Arms -->
+    <path d="M70,120 L50,180 L60,190 L80,140 Z" fill="#e0e0e0" stroke="#333" stroke-width="2"/>
+    <path d="M230,120 L250,180 L240,190 L220,140 Z" fill="#e0e0e0" stroke="#333" stroke-width="2"/>
+    
+    <!-- Hips -->
+    <path d="M110,250 L90,270 L90,290 L110,290 Z" fill="#e0e0e0" stroke="#333" stroke-width="2"/>
+    <path d="M190,250 L210,270 L210,290 L190,290 Z" fill="#e0e0e0" stroke="#333" stroke-width="2"/>
+    
+    <!-- Legs -->
+    <path d="M90,290 L80,400 L100,400 L110,290 Z" fill="#e0e0e0" stroke="#333" stroke-width="2"/>
+    <path d="M210,290 L220,400 L200,400 L190,290 Z" fill="#e0e0e0" stroke="#333" stroke-width="2"/>
+    
+    <!-- Interactive Areas -->
+    <rect x="70" y="100" width="160" height="50" fill="rgba(255,0,0,0.1)" stroke="none" class="shoulder-area"/>
+    <rect x="80" y="150" width="140" height="50" fill="rgba(0,255,0,0.1)" stroke="none" class="chest-area"/>
+    <rect x="90" y="200" width="120" height="50" fill="rgba(0,0,255,0.1)" stroke="none" class="abs-area"/>
+    <rect x="80" y="250" width="140" height="100" fill="rgba(255,255,0,0.1)" stroke="none" class="legs-area"/>
+    <rect x="90" y="270" width="120" height="50" fill="rgba(255,0,255,0.1)" stroke="none" class="glutes-area"/>
+</svg> 
